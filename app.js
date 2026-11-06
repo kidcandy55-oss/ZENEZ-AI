@@ -5,7 +5,7 @@
 
 // IMPORTANT:
 // Worker deploy pannina piragu unga Worker URL-ah inga paste pannunga.
-const API_URL = "https://zenez-ai.kidcandy55.workers.dev";
+const API_URL = "https://zenez-ai.kidcandy55.workers.dev";;
 
 let currentTool = "chat";
 
