@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENEZ AI - All in One Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>✦ ZENEZ AI</h2>
+    <p class="tagline">YOUR PERSONAL AI</p>
+
+    <button onclick="newChat()">+ New Chat</button>
+
+    <nav>
+      <button onclick="selectTool('chat')">💬 AI Chat</button>
+      <button onclick="selectTool('image')">🎨 Image Studio</button>
+      <button onclick="selectTool('code')">💻 Coding Assistant</button>
+      <button onclick="selectTool('translate')">🌐 Translator</button>
+      <button onclick="selectTool('summarize')">📄 Summarizer</button>
+      <button onclick="selectTool('pdf')">📚 PDF Assistant</button>
+    </nav>
+
+    <p class="footer">Powered by ZENEZ AI</p>
+  </aside>
+
+  <main class="main">
+    <header>
+      <div>
+        <small>YOUR AI WORKSPACE</small>
+        <h1>All in One Assistant</h1>
+      </div>
+      <span class="status">● ONLINE UI</span>
+    </header>
+
+    <section class="welcome" id="welcome">
+      <h1>Welcome to ZENEZ AI</h1>
+      <h2>Your AI. Everything in one place.</h2>
+      <p>Chat, create, code, translate and explore.</p>
+    </section>
+
+    <section id="chatBox" class="chat-box"></section>
+
+    <section class="tool-box" id="toolBox">
+      <h2 id="toolTitle">AI Assistant</h2>
+      <textarea id="toolInput" placeholder="Enter your request..."></textarea>
+      <button onclick="runTool()">Generate</button>
+    </section>
+
+    <section class="composer">
+      <textarea id="userInput" placeholder="Ask ZENEZ AI anything..."></textarea>
+      <div class="actions">
+        <button onclick="startVoice()">🎙 Voice</button>
+        <button onclick="sendMessage()">➤ Send</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
